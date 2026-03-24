@@ -2,7 +2,7 @@
 
 **Production-grade, future-proof personal DevOps platform.**
 
-Live URL: `https://suryalearningdevops.online` (Target)
+Live URL: `https://strk-99.github.io/surya-portfolio-website/` (Target)
 
 ## Architectural Philosophy
 - **Static-first**: Fast, cheap, secure.
