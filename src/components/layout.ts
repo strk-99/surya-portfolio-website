@@ -1,10 +1,12 @@
 
+const BASE = import.meta.env.BASE_URL;
+
 const NAV_LINKS = [
-  { href: '/', label: 'Home', match: /^\/($|index.html)/ },
-  { href: '/about/', label: 'About', match: /^\/about/ },
-  { href: '/skills/', label: 'Skills', match: /^\/skills/ },
-  { href: '/projects/', label: 'Projects', match: /^\/projects/ },
-  { href: '/contact/', label: 'Contact', match: /^\/contact/ },
+  { href: BASE, label: 'Home', match: /^\/($|index\.html)/ },
+  { href: `${BASE}about/`, label: 'About', match: /^\/about/ },
+  { href: `${BASE}skills/`, label: 'Skills', match: /^\/skills/ },
+  { href: `${BASE}projects/`, label: 'Projects', match: /^\/projects/ },
+  { href: `${BASE}contact/`, label: 'Contact', match: /^\/contact/ },
 ];
 
 export function injectLayout() {
@@ -16,7 +18,7 @@ export function injectLayout() {
   header.className = 'navbar';
   header.innerHTML = `
     <div class="container nav-container">
-      <a href="/" class="nav-logo">
+      <a href="${BASE}" class="nav-logo">
         <span class="text-accent">surya</span><span class="text-success">@devops</span>:~$
       </a>
       <nav class="nav-links">
@@ -46,7 +48,10 @@ export function injectLayout() {
 }
 
 function highlightActiveLink() {
-  const path = window.location.pathname;
+  const rawPath = window.location.pathname;
+  let path = rawPath.replace(BASE, '/');
+  if (!path.startsWith('/')) path = '/' + path; // Safety fallback
+
   NAV_LINKS.forEach(link => {
     // Check if current path matches the link rule
     // Note: Development server might serve /about as /about/ or /about/index.html
