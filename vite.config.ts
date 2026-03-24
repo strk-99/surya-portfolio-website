@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
+    base: '/surya-portfolio-website/', // Set this to your repository name for GitHub Pages
     appType: 'mpa', // Explicitly disable SPA fallback
     build: {
         rollupOptions: {
