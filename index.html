@@ -33,24 +33,35 @@
       <h2 class="mono">Latest Activities</h2>
       <div
         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-        <!-- Card 1 -->
-        <div
-          style="background: var(--bg-secondary); padding: 1.5rem; border: 1px solid var(--border-default); border-radius: 8px;">
-          <h3 style="font-size: 1.25rem;">Platform Launch</h3>
-          <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1rem;">Dec 2025</p>
-          <p>Initialized version 1 of <em>suryalearningdevops.online</em> using AWS S3 and CloudFront.</p>
-        </div>
-        <!-- Card 2 -->
-        <div
-          style="background: var(--bg-secondary); padding: 1.5rem; border: 1px solid var(--border-default); border-radius: 8px;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <h3 style="font-size: 1.25rem;">Infrastructure</h3>
-            <span
-              style="font-size:0.8rem; border:1px solid var(--text-success); color:var(--text-success); padding:2px 8px; border-radius:12px;">Active</span>
+        <!-- Card 1 (Latest Project) -->
+        <a href="projects/" style="text-decoration: none; color: inherit;">
+          <div
+            style="background: var(--bg-secondary); padding: 1.5rem; border: 1px solid var(--border-default); border-radius: 8px; height: 100%; transition: border-color 0.2s;"
+            onmouseover="this.style.borderColor='var(--text-accent)'"
+            onmouseout="this.style.borderColor='var(--border-default)'">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <h3 style="font-size: 1.25rem;">STRK-FIT App</h3>
+              <span
+                style="font-size:0.8rem; border:1px solid var(--text-success); color:var(--text-success); padding:2px 8px; border-radius:12px;">New</span>
+            </div>
+            <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1rem;">Fitness Tracking</p>
+            <p>Comprehensive mobile-first fitness tracking application with gamified Level/XP progression and custom
+              lifestyle schedules.</p>
           </div>
-          <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1rem;">Dec 2025</p>
-          <p>Designed an extensible apps container structure to support independent DevOps labs and services.</p>
-        </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="projects/" style="text-decoration: none; color: inherit;">
+          <div
+            style="background: var(--bg-secondary); padding: 1.5rem; border: 1px solid var(--border-default); border-radius: 8px; height: 100%; transition: border-color 0.2s;"
+            onmouseover="this.style.borderColor='var(--text-accent)'"
+            onmouseout="this.style.borderColor='var(--border-default)'">
+            <h3 style="font-size: 1.25rem;">DevSecOps Tracker</h3>
+            <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1rem;">Gamified Learning</p>
+            <p>Built a gamified skill tracking platform with XP progression, 316 skills across 15 phases, and
+              achievement system.</p>
+          </div>
+        </a>
       </div>
     </section>
   </main>
