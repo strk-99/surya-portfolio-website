@@ -15,64 +15,79 @@
 
         <div style="display: grid; gap: 2rem;">
 
-            <!-- STRK-FIT Project -->
-            <article
+            <!-- Project: CloudWatch -->
+            <article class="project-card"
                 style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-default);">
                 <div
-                    style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-                    <h2 style="font-size: 1.5rem; border: none; padding: 0;">STRK-FIT Fitness Tracking App</h2>
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; align-items: start;">
+                    <div>
+                        <div style="margin-bottom: 0.5rem;"><span class="project-badge-featured">&#11088;
+                                Featured</span></div>
+                        <h2 style="font-size: 1.5rem; border: none; padding: 0;">Automated CloudWatch Incident Response
+                        </h2>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; height: fit-content;">
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">React
-                            19</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Python</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Zustand</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">AWS
+                            Lambda</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Tailwind</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">DynamoDB</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Node.js</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">SNS</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">SQLite</span>
-                        <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Capacitor</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">SSM</span>
                     </div>
                 </div>
-                <p style="margin-bottom: 1.25rem;">
-                    Comprehensive mobile-first fitness tracking application with gamified Level/XP progression. Tracks
-                    workouts, nutrition, step goals, and custom lifestyle schedules like Shift Planning with secure JWT
-                    authentication.
-                </p>
-                <a href="../strk-fit.apk" download class="btn"
-                    style="display:inline-block; margin-top: 0.5rem; text-decoration: none;">⬇️ Download APK</a>
-            </article>
-            <!-- Project 1 -->
-            <article
-                style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-default);">
-                <div
-                    style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-                    <h2 style="font-size: 1.5rem; border: none; padding: 0;">DevSecOps Gamified Learning Tracker</h2>
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                        <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">HTML</span>
-                        <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">CSS</span>
-                        <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">JavaScript</span>
-                        <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">GitHub
-                            Pages</span>
-                    </div>
+                <div style="margin-bottom: 1.25rem;">
+                    <p><strong>Problem:</strong> High alert noise and manual debugging delays</p>
+                    <p><strong>Solution:</strong> Built Lambda-based auto-response system with RCA via SSM</p>
+                    <p><strong>Impact:</strong> Reduced alert noise by 70&ndash;90% and faster incident resolution</p>
                 </div>
-                <p style="margin-bottom: 1.25rem;">
-                    Built a gamified skill tracking platform with XP progression, 316 skills across 15 phases,
-                    achievement system, and shareable read-only portfolio view.
-                </p>
-                <a href="https://strk-99.github.io/devsecops-gamified" target="_blank" rel="noopener" class="mono"
-                    style="color: var(--text-accent);">&#x1F449; Live Demo &rarr;</a>
+                <div class="cta-group">
+                    <a href="https://github.com/strk-99" target="_blank" rel="noopener" class="cta-link">&#128187;
+                        GitHub</a>
+                </div>
             </article>
 
-            <!-- Project 2 -->
-            <article
+            <!-- Project: Jenkins EKS -->
+            <article class="project-card"
+                style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-default);">
+                <div
+                    style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; align-items: start;">
+                    <div>
+                        <div style="margin-bottom: 0.5rem;"><span class="project-badge-featured">&#11088;
+                                Featured</span></div>
+                        <h2 style="font-size: 1.5rem; border: none; padding: 0;">Jenkins CI/CD Pipeline on EKS</h2>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; height: fit-content;">
+                        <span
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Jenkins</span>
+                        <span
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Kubernetes</span>
+                        <span
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Kaniko</span>
+                        <span
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">ECR</span>
+                        <span
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">AWS</span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.25rem;">
+                    <p><strong>Problem:</strong> Manual, slow, and insecure Docker daemon builds</p>
+                    <p><strong>Solution:</strong> Full CI/CD pipeline running on Kubernetes using Kaniko</p>
+                    <p><strong>Impact:</strong> Automated secure rootless Docker builds with seamless rollout to EKS
+                        without privileged containers</p>
+                </div>
+                <div class="cta-group">
+                    <a href="https://github.com/strk-99" target="_blank" rel="noopener" class="cta-link">&#128187;
+                        GitHub</a>
+                </div>
+            </article>
+
+            <!-- Project: AI Chatbot -->
+            <article class="project-card"
                 style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-default);">
                 <div
                     style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
@@ -91,42 +106,57 @@
                             API</span>
                     </div>
                 </div>
-                <p style="margin-bottom: 1.25rem;">
-                    Full-stack AI chatbot with end-to-end LLM tracing. Every message traced in self-hosted Langfuse with
-                    latency, model name, and session analytics.
-                </p>
-                <a href="https://github.com/suryakrishna-devops/chatbot-llm-monitoring" target="_blank" rel="noopener"
-                    class="mono" style="color: var(--text-accent);">&#x1F449; View Source &rarr;</a>
+                <div style="margin-bottom: 1.25rem;">
+                    <p>Built end-to-end chatbot with Langfuse tracing</p>
+                    <br>
+                    <p><strong>Impact:</strong></p>
+                    <ul style="margin-left: 1.5rem;">
+                        <li>Tracked latency, model usage, and user sessions</li>
+                        <li>Improved debugging and monitoring of AI responses</li>
+                    </ul>
+                </div>
+                <div class="cta-group">
+                    <a href="https://github.com/suryakrishna-devops/chatbot-llm-monitoring" target="_blank"
+                        rel="noopener" class="cta-link">&#128187; View Source</a>
+                </div>
             </article>
 
-            <!-- Project 3 -->
-            <article
+            <!-- Project: Gamified DevSecOps -->
+            <article class="project-card"
                 style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-default);">
                 <div
                     style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-                    <h2 style="font-size: 1.5rem; border: none; padding: 0;">Automated CloudWatch Incident Response</h2>
+                    <h2 style="font-size: 1.5rem; border: none; padding: 0;">Gamified DevSecOps Learning Platform</h2>
                     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Python</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">HTML</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">AWS
-                            Lambda</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">CSS</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">DynamoDB</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">JavaScript</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">SNS</span>
-                        <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">SSM</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">GitHub
+                            Pages</span>
                     </div>
                 </div>
-                <p style="margin-bottom: 1.25rem;">
-                    Lambda-based automated incident response system handling 14 CloudWatch alarm types. Smart RCA via
-                    SSM, 70&ndash;90% alert noise reduction using DynamoDB deduplication.
-                </p>
+                <div style="margin-bottom: 1.25rem;">
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>316 skills across 15 phases</li>
+                        <li>XP progression + achievements</li>
+                        <li>Public portfolio tracking system</li>
+                    </ul>
+                    <p><strong>Impact:</strong> Structured DevSecOps roadmap for real-world learning.</p>
+                </div>
+                <div class="cta-group">
+                    <a href="https://strk-99.github.io/devsecops-gamified" target="_blank" rel="noopener"
+                        class="cta-link">&#127760; Live Demo</a>
+                    <a href="https://github.com/strk-99/devsecops-gamified" target="_blank" rel="noopener"
+                        class="cta-link">&#128187; GitHub</a>
+                </div>
             </article>
 
-            <!-- Project 4 -->
-            <article
+            <!-- Project: K8s Setup -->
+            <article class="project-card"
                 style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-default);">
                 <div
                     style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
@@ -142,35 +172,57 @@
                             style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">EKS</span>
                     </div>
                 </div>
-                <p style="margin-bottom: 1.25rem;">
-                    Production-grade multi-node Kubernetes cluster using kubeadm. Debugged CIDR mismatch, configured
-                    containerd runtime, Flannel CNI networking.
-                </p>
+                <div style="margin-bottom: 1.25rem;">
+                    <p>Production-grade multi-node Kubernetes cluster using kubeadm.</p>
+                    <br>
+                    <p><strong>Impact:</strong> Debugged CIDR mismatch and configured containerd runtime with Flannel
+                        CNI networking.</p>
+                </div>
+                <div class="cta-group">
+                    <a href="https://github.com/strk-99" target="_blank" rel="noopener" class="cta-link">&#128187;
+                        GitHub</a>
+                </div>
             </article>
 
-            <!-- Project 5 -->
-            <article
+            <!-- STRK-FIT Project -->
+            <article class="project-card"
                 style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-default);">
                 <div
                     style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-                    <h2 style="font-size: 1.5rem; border: none; padding: 0;">Jenkins CI/CD Pipeline on EKS</h2>
+                    <h2 style="font-size: 1.5rem; border: none; padding: 0;">Full-Stack Fitness App with Gamification
+                    </h2>
                     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Jenkins</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">React
+                            19</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Kubernetes</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Zustand</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Kaniko</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Tailwind</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">ECR</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Node.js</span>
                         <span
-                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">AWS</span>
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">SQLite</span>
+                        <span
+                            style="font-size: 0.8rem; padding: 2px 8px; background: #21262d; border-radius: 12px; border: 1px solid var(--border-default);">Capacitor</span>
                     </div>
                 </div>
-                <p style="margin-bottom: 1.25rem;">
-                    Full CI/CD pipeline running on Kubernetes using Kaniko for secure rootless Docker builds, automated
-                    rollout to EKS.
-                </p>
+                <div style="margin-bottom: 1.25rem;">
+                    <p><strong>Features:</strong></p>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>JWT authentication</li>
+                        <li>XP/Level system</li>
+                        <li>Nutrition + workout tracking</li>
+                    </ul>
+                    <p><strong>Impact:</strong> Designed scalable mobile-first architecture bridging React with native
+                        devices.</p>
+                </div>
+                <div class="cta-group">
+                    <a href="https://github.com/strk-99" target="_blank" rel="noopener" class="cta-link">&#128187;
+                        GitHub</a>
+                    <a href="../strk-fit.apk" download class="cta-link"
+                        style="color: var(--text-success);">&#11015;&#65039; Download APK</a>
+                </div>
             </article>
 
         </div>
