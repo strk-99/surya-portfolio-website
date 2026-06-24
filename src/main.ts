@@ -29,7 +29,7 @@ function createParticleCanvas() {
 
   interface P { x:number; y:number; vx:number; vy:number; size:number; opacity:number; pulse:number; ps:number; hue:number }
 
-  const COUNT = 70
+  const COUNT = window.innerWidth < 768 ? 30 : 70
   const pts: P[] = []
 
   for (let i = 0; i < COUNT; i++) {

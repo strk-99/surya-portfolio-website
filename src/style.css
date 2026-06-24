@@ -113,7 +113,7 @@ main, header, footer { position: relative; z-index: 1; }
 
 .container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
 
-main { padding-top: 2rem; padding-bottom: 4rem; }
+main { padding-top: 2rem; padding-bottom: 6rem; }
 
 .page-padding-top { padding-top: 5rem; }
 
@@ -568,10 +568,10 @@ code, pre { font-family: var(--font-mono); font-size: 0.9em; }
 
 /* ── FOOTER ── */
 footer {
-  border-top: 1px solid var(--border-dim); padding: 1.5rem 0; margin-top: 2rem;
+  border-top: 1px solid var(--border-dim); padding: 1.25rem 0;
   text-align: center; color: var(--text-secondary); font-size: 0.78rem;
-  background: rgba(3,6,16,0.75); backdrop-filter: blur(10px);
-  position: relative; z-index: 1;
+  background: rgba(3,6,16,0.85); backdrop-filter: blur(14px);
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
 }
 
 /* ── SKILLS GRID ── */
@@ -591,6 +591,17 @@ footer {
 @media (max-width: 640px) {
   .recent-work-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ── TABLET / NARROW DESKTOP ── */
+@media (min-width: 769px) and (max-width: 1080px) {
+  .skill-category-title {
+    font-size: 0.64rem;
+    letter-spacing: 0.06em;
+  }
+  .skills-grid .glass-card {
+    padding: 1.35rem !important;
   }
 }
 
@@ -628,6 +639,6 @@ footer {
   }
 
   main {
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
   }
 }
