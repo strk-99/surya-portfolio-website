@@ -57,7 +57,7 @@ export function injectLayout() {
   footer.innerHTML = `
     <div class="container">
       <p style="font-family:var(--font-mono);letter-spacing:0.05em;opacity:0.55;">
-        © ${new Date().getFullYear()} <span style="color:var(--cyan);">Surya Teja</span> &nbsp;·&nbsp; Cloud Engineer &nbsp;·&nbsp; Bengaluru
+        © ${new Date().getFullYear()} <span style="color:var(--cyan);">PV Surya Teja</span> &nbsp;·&nbsp; Cloud Engineer &nbsp;·&nbsp; Bengaluru
       </p>
     </div>
   `
