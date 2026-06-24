@@ -1,60 +1,80 @@
 
-const BASE = import.meta.env.BASE_URL;
+const BASE = import.meta.env.BASE_URL
 
 const NAV_LINKS = [
-  { href: BASE, label: 'Home', match: /^\/($|index\.html)/ },
-  { href: `${BASE}about/`, label: 'About', match: /^\/about/ },
-  { href: `${BASE}skills/`, label: 'Skills', match: /^\/skills/ },
+  { href: BASE,               label: 'Home',     match: /^\/($|index\.html)/ },
+  { href: `${BASE}about/`,    label: 'About',    match: /^\/about/ },
+  { href: `${BASE}skills/`,   label: 'Skills',   match: /^\/skills/ },
   { href: `${BASE}projects/`, label: 'Projects', match: /^\/projects/ },
-  { href: `${BASE}contact/`, label: 'Contact', match: /^\/contact/ },
-];
+  { href: `${BASE}contact/`,  label: 'Contact',  match: /^\/contact/ },
+]
 
 export function injectLayout() {
-  const app = document.querySelector<HTMLDivElement>('#app') || document.body;
-  if (!app) return;
+  // Scan beam
+  const beam = document.createElement('div')
+  beam.className = 'scan-beam'
+  document.body.appendChild(beam)
 
-  const header = document.createElement('header');
-  header.className = 'navbar';
+  // CRT scanlines
+  const lines = document.createElement('div')
+  lines.className = 'scanlines'
+  document.body.appendChild(lines)
+
+  // Header
+  const header = document.createElement('header')
+  header.className = 'navbar'
   header.innerHTML = `
     <div class="container nav-container">
-      <a href="${BASE}" class="nav-logo">
+      <a href="${BASE}" class="nav-logo" style="text-decoration:none;">
         <span class="text-accent">surya</span><span class="text-success">@devops</span><span style="color:var(--text-secondary)">:~$</span><span class="cursor-blink"></span>
       </a>
-      <nav class="nav-links">
-        ${NAV_LINKS.map(link => `
-          <a href="${link.href}" class="nav-link" data-path="${link.label}">
-            ${link.label}
-          </a>
-        `).join('')}
+      <nav class="nav-links" id="nav-links">
+        ${NAV_LINKS.map(l => `<a href="${l.href}" class="nav-link">${l.label}</a>`).join('')}
       </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  `;
+  `
+  document.body.insertBefore(header, document.body.firstChild)
 
-  document.body.insertBefore(header, document.body.firstChild);
+  // Hamburger
+  const hamburger = document.getElementById('hamburger')
+  const navLinks  = document.getElementById('nav-links')
+  hamburger?.addEventListener('click', () => {
+    hamburger.classList.toggle('open')
+    navLinks?.classList.toggle('mobile-open')
+  })
+  navLinks?.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger?.classList.remove('open')
+      navLinks.classList.remove('mobile-open')
+    })
+  })
 
-  const footer = document.createElement('footer');
+  // Footer
+  const footer = document.createElement('footer')
   footer.innerHTML = `
     <div class="container">
-      <p style="opacity:0.6; font-family:var(--font-mono); letter-spacing:0.05em;">
-        © ${new Date().getFullYear()} <span style="color:var(--accent-cyan);">Surya</span> &nbsp;·&nbsp; DevOps Engineer
+      <p style="font-family:var(--font-mono);letter-spacing:0.05em;opacity:0.55;">
+        © ${new Date().getFullYear()} <span style="color:var(--cyan);">Surya Teja</span> &nbsp;·&nbsp; Cloud Engineer &nbsp;·&nbsp; Bengaluru
       </p>
     </div>
-  `;
-  document.body.appendChild(footer);
+  `
+  document.body.appendChild(footer)
 
-  highlightActiveLink();
+  highlightActiveLink()
 }
 
 function highlightActiveLink() {
-  const rawPath = window.location.pathname;
-  let path = rawPath.replace(BASE, '/');
-  if (!path.startsWith('/')) path = '/' + path;
+  const rawPath = window.location.pathname
+  let path = rawPath.replace(BASE, '/')
+  if (!path.startsWith('/')) path = '/' + path
 
   NAV_LINKS.forEach(link => {
-    const isActive = link.match.test(path);
-    if (isActive) {
-      const el = document.querySelector(`.nav-link[href="${link.href}"]`) as HTMLAnchorElement;
-      if (el) el.classList.add('active');
+    if (link.match.test(path)) {
+      const el = document.querySelector(`.nav-link[href="${link.href}"]`) as HTMLAnchorElement
+      if (el) el.classList.add('active')
     }
-  });
+  })
 }

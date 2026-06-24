@@ -1,23 +1,20 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Surya | Skills</title>
+  <title>Surya Teja | Skills</title>
 </head>
-
 <body>
   <main class="container page-padding-top">
 
-    <p class="section-label">// TECHNICAL STACK</p>
-    <h1 class="mono" style="margin-bottom: 0.75rem; border-bottom: none;">Technical Skills</h1>
-    <p class="text-secondary" style="margin-bottom: 3rem; font-size: 1rem; line-height: 1.7;">Essential tools and technologies I use to build and maintain infrastructure.</p>
+    <span class="section-label reveal-on-scroll">// TECHNICAL STACK</span>
+    <h1 class="mono reveal-on-scroll" style="margin-bottom:0.75rem;border-bottom:none;">Technical Skills</h1>
+    <p class="text-secondary reveal-on-scroll" style="margin-bottom:3rem;font-size:1rem;line-height:1.7;">Tools and technologies I use daily to build and operate infrastructure.</p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.75rem;">
 
-      <!-- Cloud -->
-      <div class="glass-card" style="padding: 1.75rem;">
+      <div class="glass-card hud-corners reveal-on-scroll" style="padding:1.75rem;">
         <h3 class="skill-category-title">Cloud &amp; Infrastructure</h3>
         <div>
           <span class="skill-tag">AWS EC2</span>
@@ -25,6 +22,7 @@
           <span class="skill-tag">AWS RDS</span>
           <span class="skill-tag">IAM</span>
           <span class="skill-tag">CloudFront</span>
+          <span class="skill-tag">CloudWatch</span>
           <span class="skill-tag">Terraform</span>
           <span class="skill-tag">Docker</span>
           <span class="skill-tag">Kubernetes</span>
@@ -33,26 +31,26 @@
         </div>
       </div>
 
-      <!-- CI/CD -->
-      <div class="glass-card" style="padding: 1.75rem;">
+      <div class="glass-card hud-corners reveal-on-scroll reveal-delay-1" style="padding:1.75rem;">
         <h3 class="skill-category-title">CI/CD &amp; Operations</h3>
         <div>
           <span class="skill-tag">Jenkins</span>
           <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Kaniko</span>
+          <span class="skill-tag">ECR</span>
           <span class="skill-tag">Bash</span>
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Prometheus</span>
           <span class="skill-tag">Grafana</span>
-          <span class="skill-tag">Kaniko</span>
-          <span class="skill-tag">ECR</span>
+          <span class="skill-tag">AWS Lambda</span>
+          <span class="skill-tag">SNS</span>
         </div>
       </div>
 
-      <!-- Dev -->
-      <div class="glass-card" style="padding: 1.75rem;">
+      <div class="glass-card hud-corners reveal-on-scroll reveal-delay-2" style="padding:1.75rem;">
         <h3 class="skill-category-title">Development</h3>
         <div>
-          <span class="skill-tag">React</span>
+          <span class="skill-tag">React 19</span>
           <span class="skill-tag">Node.js</span>
           <span class="skill-tag">FastAPI</span>
           <span class="skill-tag">TypeScript</span>
@@ -60,6 +58,7 @@
           <span class="skill-tag">Tailwind</span>
           <span class="skill-tag">Zustand</span>
           <span class="skill-tag">Capacitor</span>
+          <span class="skill-tag">Langfuse</span>
         </div>
       </div>
 
@@ -67,5 +66,4 @@
   </main>
   <script type="module" src="/src/main.ts"></script>
 </body>
-
 </html>

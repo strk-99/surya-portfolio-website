@@ -1,29 +1,27 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Surya | Projects</title>
+  <title>Surya Teja | Projects</title>
 </head>
-
 <body>
   <main class="container page-padding-top">
 
-    <p class="section-label">// WORK</p>
-    <h1 class="mono">Projects</h1>
-    <p class="text-secondary" style="margin-bottom: 2.5rem;">Practical implementations and real-world DevOps use cases.</p>
+    <span class="section-label reveal-on-scroll">// PERSONAL PROJECTS</span>
+    <h1 class="mono reveal-on-scroll">Projects</h1>
+    <p class="text-secondary reveal-on-scroll" style="margin-bottom:2.5rem;">Built outside work — real problems, real solutions.</p>
 
-    <div style="display: grid; gap: 1.75rem;">
+    <div style="display:grid;gap:1.75rem;">
 
-      <!-- Project: CloudWatch -->
-      <article class="project-card">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
+      <!-- CloudWatch -->
+      <article class="project-card tilt-card reveal-on-scroll">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;align-items:flex-start;">
           <div>
-            <div style="margin-bottom: 0.5rem;"><span class="project-badge-featured">&#11088; Featured</span></div>
-            <h2 style="font-size: 1.4rem; border: none; padding: 0;">Automated CloudWatch Incident Response</h2>
+            <div style="margin-bottom:0.5rem;"><span class="project-badge-featured">&#11088; Featured</span></div>
+            <h2 style="font-size:1.35rem;border:none;padding:0;">Automated CloudWatch Incident Response</h2>
           </div>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; height: fit-content;">
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;height:fit-content;">
             <span class="tech-tag">Python</span>
             <span class="tech-tag">AWS Lambda</span>
             <span class="tech-tag">DynamoDB</span>
@@ -31,24 +29,24 @@
             <span class="tech-tag">SSM</span>
           </div>
         </div>
-        <div style="margin-bottom: 1.25rem; color: var(--text-secondary); line-height: 1.8;">
-          <p style="margin-bottom: 0.5rem;"><span style="color: var(--text-primary); font-weight: 600;">Problem:</span> High alert noise and manual debugging delays</p>
-          <p style="margin-bottom: 0.5rem;"><span style="color: var(--text-primary); font-weight: 600;">Solution:</span> Built Lambda-based auto-response system with RCA via SSM</p>
-          <p><span style="color: var(--text-primary); font-weight: 600;">Impact:</span> Reduced alert noise by 70&ndash;90% and faster incident resolution</p>
+        <div style="margin-bottom:1.25rem;color:var(--text-secondary);line-height:1.85;">
+          <p style="margin-bottom:0.5rem;"><span style="color:var(--text-primary);font-weight:600;">Problem:</span> High alert noise and manual debugging delays</p>
+          <p style="margin-bottom:0.5rem;"><span style="color:var(--text-primary);font-weight:600;">Solution:</span> Lambda-based auto-response with root cause analysis via SSM</p>
+          <p><span style="color:var(--text-primary);font-weight:600;">Impact:</span> Reduced alert noise by 70–90%, faster incident resolution</p>
         </div>
         <div class="cta-group">
           <a href="https://github.com/strk-99/Auto-RCA" target="_blank" rel="noopener" class="cta-link">&#128187; GitHub</a>
         </div>
       </article>
 
-      <!-- Project: Jenkins EKS -->
-      <article class="project-card">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
+      <!-- Jenkins EKS -->
+      <article class="project-card tilt-card reveal-on-scroll reveal-delay-1">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;align-items:flex-start;">
           <div>
-            <div style="margin-bottom: 0.5rem;"><span class="project-badge-featured">&#11088; Featured</span></div>
-            <h2 style="font-size: 1.4rem; border: none; padding: 0;">Jenkins CI/CD Pipeline on EKS</h2>
+            <div style="margin-bottom:0.5rem;"><span class="project-badge-featured">&#11088; Featured</span></div>
+            <h2 style="font-size:1.35rem;border:none;padding:0;">Jenkins CI/CD Pipeline on EKS</h2>
           </div>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; height: fit-content;">
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;height:fit-content;">
             <span class="tech-tag">Jenkins</span>
             <span class="tech-tag">Kubernetes</span>
             <span class="tech-tag">Kaniko</span>
@@ -56,23 +54,21 @@
             <span class="tech-tag">AWS</span>
           </div>
         </div>
-        <div style="margin-bottom: 1.25rem; color: var(--text-secondary); line-height: 1.8;">
-          <p style="margin-bottom: 0.5rem;"><span style="color: var(--text-primary); font-weight: 600;">Problem:</span> Manual, slow, and insecure Docker daemon builds</p>
-          <p style="margin-bottom: 0.5rem;"><span style="color: var(--text-primary); font-weight: 600;">Solution:</span> Full CI/CD pipeline running on Kubernetes using Kaniko</p>
-          <p><span style="color: var(--text-primary); font-weight: 600;">Impact:</span> Automated secure rootless Docker builds with seamless rollout to EKS without privileged containers</p>
+        <div style="margin-bottom:1.25rem;color:var(--text-secondary);line-height:1.85;">
+          <p style="margin-bottom:0.5rem;"><span style="color:var(--text-primary);font-weight:600;">Problem:</span> Manual, slow, and insecure Docker daemon builds</p>
+          <p style="margin-bottom:0.5rem;"><span style="color:var(--text-primary);font-weight:600;">Solution:</span> Full CI/CD pipeline on Kubernetes using Kaniko</p>
+          <p><span style="color:var(--text-primary);font-weight:600;">Impact:</span> Automated secure rootless builds with seamless rollout to EKS, zero privileged containers</p>
         </div>
         <div class="cta-group">
           <a href="https://github.com/strk-99" target="_blank" rel="noopener" class="cta-link">&#128187; GitHub</a>
         </div>
       </article>
 
-      <!-- Project: AI Chatbot -->
-      <article class="project-card">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
-          <div>
-            <h2 style="font-size: 1.4rem; border: none; padding: 0;">AI Chatbot with LLM Observability</h2>
-          </div>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+      <!-- AI Chatbot -->
+      <article class="project-card tilt-card reveal-on-scroll reveal-delay-2">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;align-items:flex-start;">
+          <h2 style="font-size:1.35rem;border:none;padding:0;">AI Chatbot with LLM Observability</h2>
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
             <span class="tech-tag">FastAPI</span>
             <span class="tech-tag">React</span>
             <span class="tech-tag">Docker</span>
@@ -80,59 +76,57 @@
             <span class="tech-tag">Groq API</span>
           </div>
         </div>
-        <div style="margin-bottom: 1.25rem; color: var(--text-secondary); line-height: 1.8;">
-          <p style="margin-bottom: 0.75rem;">Built end-to-end chatbot with Langfuse tracing.</p>
-          <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0.4rem;">Impact:</p>
-          <ul style="margin-left: 1.5rem;">
+        <div style="margin-bottom:1.25rem;color:var(--text-secondary);line-height:1.85;">
+          <p style="margin-bottom:0.75rem;">End-to-end chatbot with Langfuse tracing for full LLM observability.</p>
+          <p style="color:var(--text-primary);font-weight:600;margin-bottom:0.4rem;">Impact:</p>
+          <ul style="margin-left:1.5rem;">
             <li>Tracked latency, model usage, and user sessions</li>
             <li>Improved debugging and monitoring of AI responses</li>
           </ul>
         </div>
       </article>
 
-      <!-- Project: Gamified DevSecOps -->
-      <article class="project-card">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
+      <!-- Gamified DevSecOps -->
+      <article class="project-card tilt-card reveal-on-scroll">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;align-items:flex-start;">
           <div>
-            <div style="margin-bottom: 0.5rem;"><span class="project-badge-featured">&#11088; Featured</span></div>
-            <h2 style="font-size: 1.4rem; border: none; padding: 0;">Gamified DevSecOps Learning Platform</h2>
+            <div style="margin-bottom:0.5rem;"><span class="project-badge-featured">&#11088; Featured</span></div>
+            <h2 style="font-size:1.35rem;border:none;padding:0;">Gamified DevSecOps Learning Platform</h2>
           </div>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
             <span class="tech-tag">HTML</span>
             <span class="tech-tag">CSS</span>
             <span class="tech-tag">JavaScript</span>
             <span class="tech-tag">GitHub Pages</span>
           </div>
         </div>
-        <div style="margin-bottom: 1.25rem; color: var(--text-secondary); line-height: 1.8;">
-          <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+        <div style="margin-bottom:1.25rem;color:var(--text-secondary);line-height:1.85;">
+          <ul style="margin-left:1.5rem;margin-bottom:1rem;">
             <li>316 skills across 15 phases</li>
-            <li>XP progression + achievements</li>
-            <li>Public portfolio tracking system</li>
+            <li>XP progression + achievements system</li>
+            <li>Public portfolio tracking</li>
           </ul>
-          <p><span style="color: var(--text-primary); font-weight: 600;">Impact:</span> Structured DevSecOps roadmap for real-world learning.</p>
+          <p><span style="color:var(--text-primary);font-weight:600;">Impact:</span> Structured DevSecOps roadmap for real-world learning.</p>
         </div>
         <div class="cta-group">
           <a href="https://strk-99.github.io/devsecops-gamified" target="_blank" rel="noopener" class="cta-link">&#127760; Live Demo</a>
         </div>
       </article>
 
-      <!-- Project: K8s Setup -->
-      <article class="project-card">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
-          <div>
-            <h2 style="font-size: 1.4rem; border: none; padding: 0;">Multi-Node Kubernetes Cluster Setup</h2>
-          </div>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+      <!-- K8s Cluster -->
+      <article class="project-card tilt-card reveal-on-scroll reveal-delay-1">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;align-items:flex-start;">
+          <h2 style="font-size:1.35rem;border:none;padding:0;">Multi-Node Kubernetes Cluster Setup</h2>
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
             <span class="tech-tag">kubeadm</span>
             <span class="tech-tag">Flannel</span>
             <span class="tech-tag">containerd</span>
             <span class="tech-tag">EKS</span>
           </div>
         </div>
-        <div style="margin-bottom: 1.25rem; color: var(--text-secondary); line-height: 1.8;">
-          <p style="margin-bottom: 0.5rem;">Production-grade multi-node Kubernetes cluster using kubeadm.</p>
-          <p><span style="color: var(--text-primary); font-weight: 600;">Impact:</span> Debugged CIDR mismatch and configured containerd runtime with Flannel CNI networking.</p>
+        <div style="margin-bottom:1.25rem;color:var(--text-secondary);line-height:1.85;">
+          <p style="margin-bottom:0.5rem;">Production-grade multi-node Kubernetes cluster using kubeadm.</p>
+          <p><span style="color:var(--text-primary);font-weight:600;">Impact:</span> Debugged CIDR mismatch, configured containerd runtime with Flannel CNI networking.</p>
         </div>
         <div class="cta-group">
           <a href="https://github.com/strk-99" target="_blank" rel="noopener" class="cta-link">&#128187; GitHub</a>
@@ -140,13 +134,13 @@
       </article>
 
       <!-- STRK-FIT -->
-      <article class="project-card">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; align-items: flex-start;">
+      <article class="project-card tilt-card reveal-on-scroll reveal-delay-2">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;align-items:flex-start;">
           <div>
-            <div style="margin-bottom: 0.5rem;"><span class="project-badge-featured">&#11088; Featured</span></div>
-            <h2 style="font-size: 1.4rem; border: none; padding: 0;">Full-Stack Fitness App with Gamification</h2>
+            <div style="margin-bottom:0.5rem;"><span class="project-badge-featured">&#11088; Featured</span></div>
+            <h2 style="font-size:1.35rem;border:none;padding:0;">Full-Stack Fitness App with Gamification</h2>
           </div>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
             <span class="tech-tag">React 19</span>
             <span class="tech-tag">Zustand</span>
             <span class="tech-tag">Tailwind</span>
@@ -155,17 +149,17 @@
             <span class="tech-tag">Capacitor</span>
           </div>
         </div>
-        <div style="margin-bottom: 1.25rem; color: var(--text-secondary); line-height: 1.8;">
-          <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0.4rem;">Features:</p>
-          <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+        <div style="margin-bottom:1.25rem;color:var(--text-secondary);line-height:1.85;">
+          <p style="color:var(--text-primary);font-weight:600;margin-bottom:0.4rem;">Features:</p>
+          <ul style="margin-left:1.5rem;margin-bottom:1rem;">
             <li>JWT authentication</li>
-            <li>XP/Level system</li>
+            <li>XP / Level progression system</li>
             <li>Nutrition + workout tracking</li>
           </ul>
-          <p><span style="color: var(--text-primary); font-weight: 600;">Impact:</span> Designed scalable mobile-first architecture bridging React with native devices.</p>
+          <p><span style="color:var(--text-primary);font-weight:600;">Impact:</span> Scalable mobile-first architecture bridging React with native Android.</p>
         </div>
         <div class="cta-group">
-          <a href="../strk-fit.apk" download class="cta-link" style="color: var(--accent-green); border-color: rgba(0,255,136,0.25);">&#11015;&#65039; Download APK</a>
+          <a href="../strk-fit.apk" download class="cta-link" style="color:var(--green);border-color:rgba(0,255,136,0.22);">&#11015;&#65039; Download APK</a>
         </div>
       </article>
 
@@ -173,5 +167,4 @@
   </main>
   <script type="module" src="/src/main.ts"></script>
 </body>
-
 </html>
