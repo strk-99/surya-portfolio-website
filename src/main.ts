@@ -107,7 +107,7 @@ function initTypewriter() {
   const el = document.getElementById('typed-role')
   if (!el) return
 
-  const roles = ['Cloud Engineer', 'AWS Specialist', 'K8s Operator', 'DevOps Builder', 'Infrastructure Dev']
+  const roles = ['Cloud Engineer', 'K8s Operator', 'DevOps Engineer', 'Infrastructure Dev']
   let ri = 0, ci = 0, deleting = false
 
   const type = () => {
