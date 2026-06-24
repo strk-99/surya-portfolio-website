@@ -113,7 +113,7 @@ main, header, footer { position: relative; z-index: 1; }
 
 .container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
 
-main { padding-top: 2rem; padding-bottom: 6rem; }
+main { padding-top: 2rem; padding-bottom: 4rem; }
 
 .page-padding-top { padding-top: 5rem; }
 
@@ -568,8 +568,8 @@ code, pre { font-family: var(--font-mono); font-size: 0.9em; }
 
 /* ── FOOTER ── */
 footer {
-  border-top: 1px solid var(--border-dim); padding: 1.25rem 0;
-  text-align: center; color: var(--text-secondary); font-size: 0.78rem;
+  border-top: 1px solid var(--border-dim); padding: 0.6rem 0;
+  text-align: center; color: var(--text-secondary); font-size: 0.72rem;
   background: rgba(3,6,16,0.85); backdrop-filter: blur(14px);
   position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
 }
@@ -639,6 +639,6 @@ footer {
   }
 
   main {
-    padding-bottom: 5rem;
+    padding-bottom: 3.5rem;
   }
 }
