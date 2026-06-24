@@ -1,58 +1,56 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Surya | About</title>
+  <title>PV Surya Teja | About</title>
 </head>
-
 <body>
   <main class="container page-padding-top">
 
-    <p class="section-label">// ABOUT ME</p>
-    <h1 class="mono" style="margin-bottom: 3rem;">About Me</h1>
+    <span class="section-label reveal-on-scroll">// WHO I AM</span>
+    <h1 class="mono reveal-on-scroll" style="margin-bottom:0.4rem;">PV Surya Teja Rama Krishna</h1>
+    <p class="reveal-on-scroll" style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-secondary);margin-bottom:3rem;letter-spacing:0.08em;">// CLOUD ENGINEER &nbsp;·&nbsp; BENGALURU</p>
 
     <div class="about-container">
 
-      <!-- Photo -->
-      <div>
-        <img src="/images/surya-profile.jpg" alt="Surya - DevOps Engineer" class="profile-photo" />
-      </div>
-
-      <!-- Text -->
-      <div class="about-content">
-        <p style="font-size: 1.05rem; margin-bottom: 1.5rem; font-weight: 600; color: var(--accent-cyan); letter-spacing: 0.02em; font-family: var(--font-mono);">
-          DevOps Engineer &nbsp;·&nbsp; Cloud Infrastructure &amp; Automation
-        </p>
-
-        <p style="margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.85;">
-          I engineer reliable and scalable cloud infrastructure. My work focuses on Infrastructure as Code,
-          container orchestration, and building robust CI/CD pipelines.
-        </p>
-
-        <p style="margin-bottom: 1.5rem; color: var(--text-secondary); line-height: 1.85;">
-          This platform is my active workspace. I use it to simulate real-world production scenarios, ensuring
-          that every deployment here follows strict engineering standards rather than just being a demo.
-        </p>
-
-        <p style="margin-bottom: 2rem; color: var(--text-secondary); line-height: 1.85;">
-          I follow a simple principle: if a task is repetitive or critical, I automate it to guarantee
-          consistency and efficiency.
-        </p>
-
-        <div class="info-box">
-          <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--accent-cyan);">Why this platform?</h3>
-          <p style="font-size: 0.93rem; color: var(--text-secondary); line-height: 1.75;">
-            This is not a static portfolio. It is a live system — version-controlled, deployed via CI/CD,
-            and architected to support independent micro-services. It demonstrates infrastructure treated as a product.
-          </p>
+      <div class="reveal-on-scroll">
+        <div class="profile-wrap">
+          <div class="profile-ring"></div>
+          <div class="profile-ring profile-ring-2"></div>
+          <img src="/images/surya-profile.jpg" alt="Surya Teja — Cloud Engineer" class="profile-photo" />
         </div>
       </div>
 
+      <div class="about-content reveal-on-scroll reveal-delay-1">
+
+        <div class="exp-badge">
+          <span class="exp-dot"></span>
+          Cloud Engineer &nbsp;·&nbsp; ShellKode &nbsp;·&nbsp; Bengaluru
+        </div>
+
+        <p style="margin-bottom:1.2rem;color:var(--text-secondary);line-height:1.9;">
+          Cloud Engineer with <strong style="color:var(--text-primary);">1.5+ years of hands-on experience</strong> building and operating production cloud infrastructure at ShellKode.
+        </p>
+
+        <p style="margin-bottom:1.2rem;color:var(--text-secondary);line-height:1.9;">
+          My focus is <strong style="color:var(--text-primary);">Infrastructure as Code, container orchestration,</strong> and building CI/CD pipelines that hold up in production — not just in demos.
+        </p>
+
+        <p style="margin-bottom:2rem;color:var(--text-secondary);line-height:1.9;">
+          Outside work I build personal projects to push deeper — automated CloudWatch incident response, multi-node Kubernetes clusters, full-stack apps with DevOps baked in from day one.
+        </p>
+
+        <div class="info-box">
+          <h3 style="font-size:0.95rem;margin-bottom:0.5rem;color:var(--cyan);">Why this portfolio?</h3>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;">
+            This is a live system — version-controlled, deployed via GitHub Actions CI/CD on Vite. Every project here reflects real engineering decisions, not tutorial clones.
+          </p>
+        </div>
+
+      </div>
     </div>
   </main>
   <script type="module" src="/src/main.ts"></script>
 </body>
-
 </html>
