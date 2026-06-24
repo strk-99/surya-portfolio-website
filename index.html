@@ -3,67 +3,87 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" /> <!-- TODO: Replace -->
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Surya Learning DevOps | Home</title>
-  <meta name="description" content="A production-grade personal DevOps platform for learning and experimentation.">
+  <title>Surya | DevOps Engineer</title>
+  <meta name="description" content="DevOps Engineer — cloud infrastructure, automation, and CI/CD.">
 </head>
 
 <body>
   <main class="container">
-    <section
-      style="min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-      <p class="mono text-success" style="margin-bottom: 1rem;">#!/bin/bash</p>
-      <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem;">
+
+    <!-- Hero -->
+    <section style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding: 4rem 0 2rem;">
+
+      <p class="mono section-label fade-in-up" style="margin-bottom: 1.5rem;">&#9646; SYSTEM ONLINE &nbsp;·&nbsp; DEVOPS ENGINEER</p>
+
+      <h1 class="fade-in-up-delay-1" style="font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.08; margin-bottom: 1.5rem;">
         Building Reliable<br>
-        <span class="text-accent">Cloud & DevOps</span> Systems
+        <span class="glow-text">Cloud &amp; DevOps</span> Systems
       </h1>
-      <p class="text-secondary" style="font-size: 1.25rem; max-width: 600px; margin-bottom: 2rem;">
-        This is my personal DevOps portfolio where I design, deploy, and manage real-world cloud infrastructure using
-        AWS, Kubernetes, and CI/CD practices.
+
+      <p class="text-secondary fade-in-up-delay-2" style="font-size: 1.1rem; max-width: 540px; margin-bottom: 2.5rem; line-height: 1.85;">
+        Personal DevOps platform — designing, deploying, and managing real-world cloud infrastructure using
+        <span style="color: var(--text-primary); font-weight: 500;">AWS</span>,
+        <span style="color: var(--text-primary); font-weight: 500;">Kubernetes</span>, and
+        <span style="color: var(--text-primary); font-weight: 500;">CI/CD</span> practices.
       </p>
 
-      <div style="display: flex; gap: 1rem;">
-        <a href="projects/" class="btn btn-primary">View Projects</a>
+      <div class="fade-in-up-delay-3" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="projects/" class="btn btn-primary">&#9654; View Projects</a>
         <a href="about/" class="btn">Read Manifesto</a>
       </div>
-    </section>
 
-    <section style="margin-top: 1rem;">
-      <h2 class="mono">Latest Activities</h2>
-      <div
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-        <!-- Card 1 (Latest Project) -->
-        <a href="projects/" style="text-decoration: none; color: inherit;">
-          <div
-            style="background: var(--bg-secondary); padding: 1.5rem; border: 1px solid var(--border-default); border-radius: 8px; height: 100%; transition: border-color 0.2s;"
-            onmouseover="this.style.borderColor='var(--text-accent)'"
-            onmouseout="this.style.borderColor='var(--border-default)'">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <h3 style="font-size: 1.25rem;">STRK-FIT App</h3>
-              <span
-                style="font-size:0.8rem; border:1px solid var(--text-success); color:var(--text-success); padding:2px 8px; border-radius:12px;">New</span>
-            </div>
-            <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1rem;">Fitness Tracking</p>
-            <p>Comprehensive mobile-first fitness tracking application with gamified Level/XP progression and custom
-              lifestyle schedules.</p>
-          </div>
-        </a>
-
-        <!-- Card 2 -->
-        <a href="projects/" style="text-decoration: none; color: inherit;">
-          <div
-            style="background: var(--bg-secondary); padding: 1.5rem; border: 1px solid var(--border-default); border-radius: 8px; height: 100%; transition: border-color 0.2s;"
-            onmouseover="this.style.borderColor='var(--text-accent)'"
-            onmouseout="this.style.borderColor='var(--border-default)'">
-            <h3 style="font-size: 1.25rem;">DevSecOps Tracker</h3>
-            <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1rem;">Gamified Learning</p>
-            <p>Built a gamified skill tracking platform with XP progression, 316 skills across 15 phases, and
-              achievement system.</p>
-          </div>
-        </a>
+      <!-- Stats row -->
+      <div style="display: flex; gap: 3rem; margin-top: 4rem; flex-wrap: wrap; border-top: 1px solid var(--border-default); padding-top: 2.5rem;">
+        <div>
+          <div class="stat-value">5+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div>
+          <div class="stat-value">316</div>
+          <div class="stat-label">Skills Tracked</div>
+        </div>
+        <div>
+          <div class="stat-value">15</div>
+          <div class="stat-label">Learning Phases</div>
+        </div>
+        <div>
+          <div class="stat-value">AWS</div>
+          <div class="stat-label">Cloud Primary</div>
+        </div>
       </div>
     </section>
+
+    <!-- Latest Activities -->
+    <section style="margin-top: 2rem; padding-bottom: 4rem;">
+      <p class="section-label">// LATEST ACTIVITIES</p>
+      <h2 class="mono" style="border: none; padding: 0; margin-bottom: 2rem;">Recent Work</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+
+        <a href="projects/" style="text-decoration: none; color: inherit;">
+          <div class="glass-card" style="padding: 1.75rem; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+              <h3 style="font-size: 1.1rem; margin: 0;">STRK-FIT App</h3>
+              <span style="font-size: 0.72rem; border: 1px solid var(--accent-green); color: var(--accent-green); padding: 2px 8px; border-radius: 12px; box-shadow: 0 0 8px rgba(0,255,136,0.15); white-space: nowrap;">NEW</span>
+            </div>
+            <p class="text-secondary mono" style="font-size: 0.82rem; margin-bottom: 0.75rem;">// Fitness Tracking</p>
+            <p style="font-size: 0.93rem; line-height: 1.65; color: var(--text-secondary);">Comprehensive mobile-first fitness app with gamified Level/XP progression and custom lifestyle schedules.</p>
+          </div>
+        </a>
+
+        <a href="projects/" style="text-decoration: none; color: inherit;">
+          <div class="glass-card" style="padding: 1.75rem; height: 100%;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.4rem;">DevSecOps Tracker</h3>
+            <p class="text-secondary mono" style="font-size: 0.82rem; margin-bottom: 0.75rem;">// Gamified Learning</p>
+            <p style="font-size: 0.93rem; line-height: 1.65; color: var(--text-secondary);">Gamified skill tracking with XP progression, 316 skills across 15 phases, and achievement system.</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
   </main>
   <script type="module" src="/src/main.ts"></script>
 </body>

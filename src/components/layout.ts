@@ -13,13 +13,12 @@ export function injectLayout() {
   const app = document.querySelector<HTMLDivElement>('#app') || document.body;
   if (!app) return;
 
-  // Header
   const header = document.createElement('header');
   header.className = 'navbar';
   header.innerHTML = `
     <div class="container nav-container">
       <a href="${BASE}" class="nav-logo">
-        <span class="text-accent">surya</span><span class="text-success">@devops</span>:~$
+        <span class="text-accent">surya</span><span class="text-success">@devops</span><span style="color:var(--text-secondary)">:~$</span><span class="cursor-blink"></span>
       </a>
       <nav class="nav-links">
         ${NAV_LINKS.map(link => `
@@ -33,28 +32,25 @@ export function injectLayout() {
 
   document.body.insertBefore(header, document.body.firstChild);
 
-  // Footer
   const footer = document.createElement('footer');
-  footer.style.cssText = 'border-top: 1px solid var(--border-default); padding: 1rem 0; margin-top: auto; text-align: center; color: var(--text-secondary); font-size: 0.8rem;';
   footer.innerHTML = `
     <div class="container">
-      <p style="opacity: 0.7;">© ${new Date().getFullYear()} Surya Learning DevOps</p>
+      <p style="opacity:0.6; font-family:var(--font-mono); letter-spacing:0.05em;">
+        © ${new Date().getFullYear()} <span style="color:var(--accent-cyan);">Surya</span> &nbsp;·&nbsp; DevOps Engineer
+      </p>
     </div>
   `;
   document.body.appendChild(footer);
 
-  // Highlights
   highlightActiveLink();
 }
 
 function highlightActiveLink() {
   const rawPath = window.location.pathname;
   let path = rawPath.replace(BASE, '/');
-  if (!path.startsWith('/')) path = '/' + path; // Safety fallback
+  if (!path.startsWith('/')) path = '/' + path;
 
   NAV_LINKS.forEach(link => {
-    // Check if current path matches the link rule
-    // Note: Development server might serve /about as /about/ or /about/index.html
     const isActive = link.match.test(path);
     if (isActive) {
       const el = document.querySelector(`.nav-link[href="${link.href}"]`) as HTMLAnchorElement;

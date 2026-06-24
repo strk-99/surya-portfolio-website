@@ -2,51 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Surya Learning DevOps | Skills</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surya | Skills</title>
 </head>
 
 <body>
-    <main class="container page-padding-top">
-        <h1 class="mono" style="margin-bottom: 2rem; border-bottom: none;">Technical Skills</h1>
-        <p class="text-secondary" style="margin-bottom: 3rem; font-size: 1.1rem; line-height: 1.6;">Essential tools and
-            technologies I use to build and maintain infrastructure.</p>
+  <main class="container page-padding-top">
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+    <p class="section-label">// TECHNICAL STACK</p>
+    <h1 class="mono" style="margin-bottom: 0.75rem; border-bottom: none;">Technical Skills</h1>
+    <p class="text-secondary" style="margin-bottom: 3rem; font-size: 1rem; line-height: 1.7;">Essential tools and technologies I use to build and maintain infrastructure.</p>
 
-            <!-- Category: Cloud -->
-            <div>
-                <h3
-                    style="color: var(--text-accent); border-bottom: 1px solid var(--border-default); padding-bottom: 0.5rem; margin-bottom: 1.5rem; height: 40px; display: flex; align-items: flex-end;">
-                    Cloud & Infrastructure</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 0.75rem;">AWS (EC2, S3, RDS, IAM, CloudFront)</li>
-                    <li style="margin-bottom: 0.75rem;">Terraform (Infrastructure as Code)</li>
-                    <li style="margin-bottom: 0.75rem;">Docker</li>
-                    <li style="margin-bottom: 0.75rem;">Kubernetes (EKS basics, deployments, services)</li>
-                    <li style="margin-bottom: 0.75rem;">Linux (server administration)</li>
-                </ul>
-            </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
 
-            <!-- Category: CI/CD -->
-            <div>
-                <h3
-                    style="color: var(--text-accent); border-bottom: 1px solid var(--border-default); padding-bottom: 0.5rem; margin-bottom: 1.5rem; height: 40px; display: flex; align-items: flex-end;">
-                    CI/CD & Operations</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 0.75rem;">Jenkins</li>
-                    <li style="margin-bottom: 0.75rem;">GitHub Actions</li>
-                    <li style="margin-bottom: 0.75rem;">Bash scripting</li>
-                    <li style="margin-bottom: 0.75rem;">Basic Python scripting</li>
-                    <li style="margin-bottom: 0.75rem;">Prometheus & Grafana (monitoring fundamentals)</li>
-                </ul>
-            </div>
-
-
+      <!-- Cloud -->
+      <div class="glass-card" style="padding: 1.75rem;">
+        <h3 class="skill-category-title">Cloud &amp; Infrastructure</h3>
+        <div>
+          <span class="skill-tag">AWS EC2</span>
+          <span class="skill-tag">AWS S3</span>
+          <span class="skill-tag">AWS RDS</span>
+          <span class="skill-tag">IAM</span>
+          <span class="skill-tag">CloudFront</span>
+          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">EKS</span>
+          <span class="skill-tag">Linux</span>
         </div>
-    </main>
-    <script type="module" src="/src/main.ts"></script>
+      </div>
+
+      <!-- CI/CD -->
+      <div class="glass-card" style="padding: 1.75rem;">
+        <h3 class="skill-category-title">CI/CD &amp; Operations</h3>
+        <div>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Prometheus</span>
+          <span class="skill-tag">Grafana</span>
+          <span class="skill-tag">Kaniko</span>
+          <span class="skill-tag">ECR</span>
+        </div>
+      </div>
+
+      <!-- Dev -->
+      <div class="glass-card" style="padding: 1.75rem;">
+        <h3 class="skill-category-title">Development</h3>
+        <div>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">Tailwind</span>
+          <span class="skill-tag">Zustand</span>
+          <span class="skill-tag">Capacitor</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
